@@ -1,0 +1,34 @@
+.main_header {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.user_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.side_menu {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    height: calc(100vh - 182px);
+    width: 300px;
+}
+
+.side_btn {
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.side_btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main_panel {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    width: calc(100vw - 356px);
+}
