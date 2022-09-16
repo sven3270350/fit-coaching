@@ -7,39 +7,39 @@
         <thead>
             <tr>
                 <th>Date</th>
-                <th>Time</th>
-                <th>Program</th>
-                <th>Description</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Payment Description</th>
                 <th>Status</th>
                 <th>Action</th>
             </tr>
         </thead>
         <tbody>
-            @foreach($programs as $program)
+            @foreach($payments as $payment)
                 <tr>
                     <td>
-                        {{$program->date}}
+                        {{$payment->date}}
                     </td>
                     <td>
-                        {{$program->time}}
+                        {{$payment->pid}}
                     </td>
                     <td>
-                        {{$program->program}}
+                        {{$payment->name}}
                     </td>
                     <td>
-                        {{$program->description}}
+                        {{$payment->pdescription}}
                     </td>
-                    @if ($program->status == true)
+                    @if ($payment->status == true)
                     <td>
-                        Available
+                        Paid
                     </td>
                     @else
                     <td>
-                        Complete
+                        Unpaid
                     </td>
                     @endif
                     <td>
-                        <a href="/program/add/{{$program->id}}"><i class="fa fa-solid fa-pen program_edit"></i></a> <i id="{{$program->id}}" class="fa fa-sharp fa-solid fa-trash program_delete"></i>
+                        <a href="/payment/add/{{$payment->id}}"><i class="fa fa-solid fa-pen payment_edit"></i></a> <i id="{{$payment->id}}" class="fa fa-sharp fa-solid fa-trash payment_delete"></i>
                     </td>
                 </tr>
             @endforeach
@@ -50,7 +50,7 @@
     <div class="row">
         <div class="col-md-10 col-sm-0"></div>
         <div class="col-md-2 col-sm-12 text-center">
-            <a class="btn btn-primary" id="add_program" href="/program/add">Add new Program</a>
+            <a class="btn btn-primary" id="add_payment" href="/payment/add">Add new payment</a>
         </div>
     </div>
     @endif

@@ -29,7 +29,7 @@
                         <a class="side_btn ms-5" href="/coachee">Coachee</a>
                     <div class="side_btn ms-3">Manage Health</div>
                     <a class="side_btn ms-3" href="/program">Manage Program</a>
-                    <div class="side_btn ms-3">Manage Payment</div>
+                    <a class="side_btn ms-3" href="/payment">Manage Payment</a>
                 @else
                     <div class="side_btn ms-3">Health Update</div>
                     <div class="side_btn ms-3">Program</div>

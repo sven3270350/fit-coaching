@@ -37,7 +37,7 @@ class LoginController extends Controller
     }
 
     public function Logout() {
-
+        
     }
 
     public function Register_Coach(Request $request)
